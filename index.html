@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts/script.js"></script>
+</head>
+<body>
+  <style>
+    .image-container {
+      float: left;
+      margin-right: 20px;
+    }
+  </style>
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <h4>This content is centered and has green text color.</h4>
+      </div>
+      <div class="image-container">
+      <img src="C:\Users\H$\Downloads\Untitled.png" alt="Services i Provide" width="400" height="250">
+    </div>
+    <div class="webdevelop">
+    <h1><b>I AM A PROFESSIONAL WEBPAGE DEVELOPER</b></h1>
+  </div>
+    <div class="service">
+      <p>As a Web Developer, my focus is on crafting captivating 
+        and functional websites exclusively on the Language platform. I specialize in designing websites
+        that showcase products, integrate payment methods, and feature user-friendly layouts and structures.
+        I excel in creating visually appealing interfaces that facilitate smooth user experiences while incorporating
+        e-commerce functionalities, enabling seamless transactions. While I don't offer hosting services,
+        my expertise lies in leveraging Wix's tools to build customized websites that highlight products,
+        streamline transactions, and elevate online business presence.
+      </p>
+    </div>
+    <style>
+      /* Styles for the popup */
+      .popup {
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        z-index: 9999;
+      }
+    </style>
+     <button id="subscribeButton">Subscribe</button>
+
+     <!-- Popup form -->
+     <div id="popupForm" class="popup">
+       <h2> to get Updates</h2>
+       <form action="save_email.php" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Submit">
+      </form>
+     </div>
+   
+     <script>
+      // Function to display the popup
+      document.getElementById('subscribeButton').addEventListener('click', function() {
+        document.getElementById('popupForm').style.display = 'block';
+      });
+    </script>
+   
+</body>
+</html>
